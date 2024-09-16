@@ -1,5 +1,5 @@
 {
-  "name": "@flowise/nodevm",
+  "name": "@flowiseai/nodevm",
   "description": "nodevm is a sandbox that can run untrusted code with whitelisted Node's built-in modules",
   "keywords": [
     "sandbox",
@@ -12,7 +12,6 @@
   "version": "3.9.25",
   "main": "index.js",
   "sideEffects": false,
-  "repository": "github:FlowiseAI/nodevm",
   "license": "MIT",
   "dependencies": {
     "acorn": "^8.7.0",
@@ -33,7 +32,15 @@
     "pretest": "eslint ."
   },
   "bin": {
-    "vm2": "./bin/vm2"
+    "vm2": "bin/vm2"
   },
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "flowiseai"
 }
